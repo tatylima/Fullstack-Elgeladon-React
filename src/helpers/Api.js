@@ -8,8 +8,15 @@ const PaletaContext = {
   };
 
   //baseUrl: URL Base da da aplicação, ou seja, o endereço principal de onde será executado o serviço de API/ Back end, neste caso a aplicação a ser usada para demonstrar seu uso será executada na porta 4000;//
+  const SacolaContext = {
+    getSacola: () => `${PaletaContext.paletaEndpoint()}/all-carrinho`,
+    createSacola: () => `${PaletaContext.paletaEndpoint()}/create-carrinho`,
+    purchase: () => `${PaletaContext.paletaEndpoint()}/finish-carrinho`,
+  }
   
   export const Api = {
     baseUrl: "https://api-elgeladon.herokuapp.com",
     ...PaletaContext,
+    ...SacolaContext,
   };
+  
