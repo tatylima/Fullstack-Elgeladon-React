@@ -15,7 +15,7 @@ const PaletaContext = {
   }
   
   export const Api = {
- baseUrl: "http://localhost:3000",
+ baseUrl: "https://api-elgeladon-modulofullstack.onrender.com",
     ...PaletaContext,
     ...SacolaContext,
   };
